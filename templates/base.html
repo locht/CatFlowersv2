@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
     <title>E-Commerce - MDBootstrap</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="{% static '/css/all.css' %}">
 
     <!-- Bootstrap core CSS -->
-    <link href="../staticfiles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
-    <link href="../staticfiles/css/mdb.min.css" rel="stylesheet">
+    <link href="{% static '/css/mdb2.min.css' %}" rel="stylesheet">
+
     <style>
     </style>
 </head>
@@ -495,16 +498,16 @@
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
-    <script type="text/javascript" src="../staticfiles/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{% static '/js/jquery-3.3.1.min.js' %}"></script>
 
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="../staticfiles/js/popper.min.js"></script>
+    <script type="text/javascript" src="{% static '/js/popper.min.js' %}"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../staticfiles/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{% static '/js/bootstrap.min.js' %}"></script>
 
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="../staticfiles/js/mdb.min.js"></script>
+    <script type="text/javascript" src="{% static '/js/mdb.min.js' %}"></script>
     <div class="hiddendiv common"></div>
 
     <script type="text/javascript">

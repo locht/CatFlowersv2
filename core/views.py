@@ -16,8 +16,12 @@ import stripe
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
-class HomeView(ListView):
-    # model = Item
-    # tao so luong san pham trong 1 page (10 sp moi qua page moi)
-    # paginate_by = 4
-    template_name = "home.html"
+# class HomeView(ListView):
+#     # model = Item
+#     # tao so luong san pham trong 1 page (10 sp moi qua page moi)
+#     # paginate_by = 4
+#     template_name = "home.html"
+
+
+def Home(request):
+    return render(request, "home.html")

@@ -6,7 +6,8 @@ from allauth.account.views import LoginView, SignupView, LogoutView
 
 app_name = 'core'
 urlpatterns = [
-    path('', HomeView.as_view(), name='home'),
+    # path('', HomeView.as_view(), name='home'),
+    path('', Home, name='home'),
     # path('product/<slug>/', ItemDetailView.as_view(), name='product'),
     # path('checkout/', CheckoutView.as_view(), name='checkout'),
     # path('order_summary/', OrderSummaryView.as_view(), name='order_summary'),

@@ -5,11 +5,11 @@ ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 DEBUG = True
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
-# ALLOWED_HOSTS = [
-#     'localhost',
-#     '127.0.0.1:8000',
-#     'catflowersv2.herokuapp.com',
-# ]
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1:8000',
+    'catflowersv2.herokuapp.com',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -70,7 +70,7 @@ USE_TZ = True
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-
+# run complete static, new folder static, run collectstatic
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'staticfiles'),
